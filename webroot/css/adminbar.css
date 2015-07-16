@@ -1,0 +1,112 @@
+.adminbar-top {
+    background-color: #222222;
+    border-color: #121212;
+
+    z-index: 1000;
+    border-width: 0 0 1px;
+
+    position: relative;
+    display: block;
+
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333333;
+
+    margin-bottom: 0;
+    height: 40px;
+
+    color: white;
+}
+
+.adminbar-top a {
+    color: white;
+}
+
+.adminbar-container {
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: block;
+    -webkit-font-smoothing: antialiased;
+
+    margin-top: -10px;
+}
+
+.adminbar-header {
+
+    padding-top: 15px;
+
+    margin-right: 0;
+    margin-left: 0;
+
+    float: left;
+
+    display: block;
+}
+
+.adminbar-collapse {
+
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.adminbar-nav {
+
+    float: left;
+    margin: 0;
+
+    padding-left: 0;
+    list-style: none;
+
+    box-sizing: border-box;
+
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+
+    margin-bottom: 0px;
+}
+
+.adminbar-nav > li {
+    float: left;
+
+    position: relative;
+    display: block;
+
+    display: inline;
+}
+
+.adminbar-nav > li > a {
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-top: -5px;
+
+    line-height: 21px;
+
+    position: relative;
+    display: block;
+}
+
+.adminbar-nav > li :hover {
+    background-color: #e6e6e6;
+    color: black;
+}

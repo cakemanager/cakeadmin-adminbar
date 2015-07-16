@@ -1,0 +1,23 @@
+{
+    "name": "cakemanager/cakeadmin-adminbar",
+    "description": "AdminBar plugin for CakeAdmin and CakePHP",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdminBar\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdminBar\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
