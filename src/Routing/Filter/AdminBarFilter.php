@@ -70,6 +70,7 @@ class AdminBarFilter extends DispatcherFilter
         $url = $request->url;
         $baseUrl = Router::url('/', true);
         $script = "<script>var __admin_bar_url = '${url}', __admin_bar_base_url = '${baseUrl}';</script>";
+        $script .= '<link rel="stylesheet" href="/admin_bar/css/adminbar.css">';
         $script .= '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>';
         $script .= '<script src="' . Router::url('/admin_bar/js/adminbar.js') . '"></script>';
         $body = substr($body, 0, $pos) . $script . substr($body, $pos);

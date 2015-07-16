@@ -14,7 +14,7 @@
     color: #333333;
 
     margin-bottom: 0;
-    height: 40px;
+    height: 30px;
 
     color: white;
 }
@@ -33,12 +33,12 @@
     display: block;
     -webkit-font-smoothing: antialiased;
 
-    margin-top: -10px;
+    margin-top: 0px;
 }
 
 .adminbar-header {
 
-    padding-top: 15px;
+    padding-top: 5px;
 
     margin-right: 0;
     margin-left: 0;
@@ -74,8 +74,8 @@
 
     box-sizing: border-box;
 
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    padding-top: 5px;
+
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
@@ -93,12 +93,8 @@
 }
 
 .adminbar-nav > li > a {
-    padding-top: 3px;
-    padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-
-    margin-top: -5px;
 
     line-height: 21px;
 
