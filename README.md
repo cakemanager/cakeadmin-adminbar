@@ -16,6 +16,10 @@ Now load the plugin with the command:
 
     $ bin/cake plugin load -r -b AdminBar
 
+The last thing you need to do is to load the `AdminBar.AdminBar`-Component using:
+
+    $this->loadComponent('AdminBar.AdminBar');
+
 ## Settings
 You can activate or deactivate the AdminBar in the settings-page in the backend.
 

@@ -17,6 +17,9 @@ use Cake\Core\Configure;
 use Cake\Routing\DispatcherFactory;
 use Settings\Core\Setting;
 
+# Configures
+Configure::write('AB.Show', true);
+
 Configure::write('Settings.Prefixes.AB', 'AdminBar');
 
 # Settings

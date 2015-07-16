@@ -14,6 +14,7 @@
  */
 namespace AdminBar\Routing\Filter;
 
+use Cake\Core\Configure;
 use Cake\Event\Event;
 use Cake\Routing\DispatcherFilter;
 use Cake\Routing\Router;
@@ -32,6 +33,10 @@ class AdminBarFilter extends DispatcherFilter
     {
         $request = $event->data['request'];
         $response = $event->data['response'];
+
+        if(!Configure::read('AB.Show')) {
+            return;
+        }
 
         if ($request->param('plugin') === 'DebugKit' || $request->is('requested')) {
             return;

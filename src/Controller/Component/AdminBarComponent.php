@@ -37,23 +37,37 @@ class AdminBarComponent extends Component
     public function beforeRender(\Cake\Event\Event $event)
     {
         $controller = $this->_registry->getController();
+
+        if (!$controller->CakeAdmin) {
+            Configure::write('AB.Show', false);
+        }
+        if (!$controller->CakeAdmin->isLoggedIn()) {
+            Configure::write('AB.Show', false);
+        }
     }
 
+    /**
+     * createAdminBar
+     *
+     * Creates the data for the AdminBar.
+     * Will return void if the request couldn't completed.
+     *
+     * @param array $requestParams Params of the current request.
+     */
     public function createAdminBar($requestParams)
     {
         $controller = $this->_registry->getController();
 
         if (!$controller->CakeAdmin) {
+            Configure::write('AB.Show', false);
             return;
         }
         if (!$controller->CakeAdmin->isLoggedIn()) {
+            Configure::write('AB.Show', false);
             return;
         }
 
         $items = Configure::read('AdminBar');
-
-//        debug($items);
-//        debug($controller->request);
 
         $result = [];
 
