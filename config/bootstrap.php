@@ -23,16 +23,16 @@ Configure::write('Settings.Prefixes.AB', 'AdminBar');
 Setting::register('AB.Backend', true, [
     'type' => 'select',
     'options' => [
-        0 => 'Non-active',
-        1 => 'Active'
+        0 => 'Disabled',
+        1 => 'Enabled'
     ]
 ]);
 
 Setting::register('AB.Frontend', true, [
     'type' => 'select',
     'options' => [
-        0 => 'Non-active',
-        1 => 'Active'
+        0 => 'Disabled',
+        1 => 'Enabled'
     ]
 ]);
 
